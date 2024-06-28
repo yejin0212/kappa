@@ -1,0 +1,75 @@
+@media (min-width: 1024px) {
+    /* DESKTOP.css : desktop영역 css */
+    img.m{display: none;}
+    img.tab{display: none;}
+    img.pc{display: block;}
+
+    header{}
+    header h1{
+        width: 10%;
+        order: unset;
+    }
+    header h1 a{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    header .btn-nav{display: none;}
+    header nav{
+        position: unset;
+        width: calc(100% - 10% - 65px);
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    header nav .control{
+        width: 65px;
+        height: 63px;
+        background-color: magenta;
+    }
+    header nav .control .btn-close{display: none;}
+    header nav .control .search{position: relative; width: 100%;}
+    header nav .control .search form{width: 100%;}
+    header nav .control .search form .user-input{
+        width: 360px;
+        background-color: #333;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        padding: 16px;
+    }
+    header nav .control .search form .user-input input{
+        width: 120px;
+        height: 36px;
+        transition: width 0.3s;
+        border: 1px solid #444;
+    }
+    header nav .control .search form .user-input input:focus{
+        width: 100%;        
+    }
+    header nav .control .search form button{
+        width: 65px;
+        height: 63px;
+    }
+    header nav .gnb{
+        width: calc(100% - 65px);
+        display: flex;
+    }
+    header nav .gnb li{
+        /* width: calc(100% / 8); */
+        width: 12.5%;
+    }
+    header nav .gnb li a{
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    header .btn-mypage{
+        order: unset;
+    }
+}

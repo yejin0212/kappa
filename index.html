@@ -1,0 +1,130 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/desktop.css">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>
+            <a href="#">
+                <img class="m" src="./images/logo_m.gif" alt="">
+                <img class="tab pc" src="./images/logo_d.gif" alt="">
+            </a>
+        </h1>
+        <div class="btn-nav">
+            <button type="button"><img src="./images/btn_menu.gif" alt=""></button>
+        </div>
+        <nav>
+            <div class="control">
+                <div class="btn-close"><button type="button"><img src="./images/btn_menu_close.gif" alt=""></button></div>
+                <div class="search">
+                    <form action="">
+                        <div class="user-input">
+                            <input type="text" placeholder="검색어를 입력하세요.">
+                        </div>
+                        <button type="submit">
+                            <img class="m" src="./images/btn_srh_m.gif" alt="">
+                            <img class="tab pc" src="./images/btn_srh.gif" alt="">
+                        </button>
+                   
+            </div>
+            <ul class="gnb">
+                <li><a href="#">COLLECTION</a></li>
+                <li><a href="#">ORIGIN</a></li>
+                <li><a href="#">4TEAM</a></li>
+                <li><a href="#">LIVE</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">STORE</a></li>
+                <li><a href="#">CAMPAIGN</a></li>
+                <li><a href="#">POP-UP STORE</a></li>
+            </ul>
+        </nav>
+        <div class="btn-mypage">
+            <button type="button">
+                <img class="tab pc" src="./images/btn_member.gif" alt="">
+                <img class="m" src="./images/btn_member_m.gif" alt="">
+            </button>
+        </div>
+    </header><!--header-->
+    <div class="banner">
+        <a href="#">
+            <img class="m" src="./images/sliderM1.jpg" alt="">
+            <img class="tab pc" src="./images/slider1.jpg" alt="">
+        </a>
+    </div>
+    <div class="con">
+        <div class="box">
+            <a href="#">
+                <div class="pic"><img src="./images/bn1.jpg" alt=""></div>
+                <div class="txt">
+                    PARK SU JIN<br/>PERFECT FIT STYLE
+                </div>
+            </a>
+        </div>
+        <div class="box">
+            <a href="#">
+                <div class="pic"><img src="./images/bn2.jpg" alt=""></div>
+                <div class="txt">
+                    PERFECT PERFORMANCE<br/>FALL TRAINING STYLE
+                </div>
+            </a>
+        </div>
+        <div class="box">
+            <a href="#">
+                <div class="pic"><img src="./images/bn3.jpg" alt=""></div>
+                <div class="txt">
+                    HERITAGE SHOES<br/>LA84 COLLECTION
+                    <div class="ico"><img src="./images/icon_blog.png" alt=""></div>
+                </div>
+            </a>
+        </div>
+        <div class="box">
+            <a href="#">
+                <div class="pic"><img src="./images/bn4.jpg" alt=""></div>
+                <div class="txt">
+                    HERITAGE SHOES<br/>LA84 US MODEL
+                    <div class="ico"><img src="./images/icon_facebook.png" alt=""></div>
+                </div>
+            </a>
+        </div>
+        <div class="box">
+            <a href="#">
+                <div class="pic"><img src="./images/bn5.jpg" alt=""></div>
+                <div class="txt">
+                    HERITAGE SHOES<br/>LA84 US ONE
+                    <div class="ico"><img src="./images/icon_instagram.png" alt=""></div>
+                </div>
+            </a>
+        </div>
+        <div class="box">
+            <a href="#">
+                <div class="pic"><img src="./images/bn6.jpg" alt=""></div>
+                <div class="txt">
+                    SPECIAL PRICE CHANCE<br/>KAPPA HOT DEAL
+                    <div class="ico"><img src="./images/icon_ad.png" alt=""></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>  
+<script>
+    const $nav = document.querySelector("nav");
+    const $navOpn = document.querySelector(".btn-nav");
+    const $navCls = document.querySelector(".btn-close");
+
+    $navOpn.addEventListener("click", () => {
+        $nav.style.left = 0;
+    });
+    $navCls.addEventListener("click", () => {
+        $nav.style.left = "-100%"; 
+    });
+</script>
+</body>
+</html>
